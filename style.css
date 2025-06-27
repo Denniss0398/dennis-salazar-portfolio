@@ -110,3 +110,37 @@ button[type="submit"]:focus {
     height: 24px;
     fill: currentColor;
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    input {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 1.5rem;
+    }
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+}
