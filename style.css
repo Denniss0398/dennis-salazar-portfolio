@@ -1,0 +1,112 @@
+/* Reset and base */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+main.container {
+    background: white;
+    padding: 2.5rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+p {
+    font-size: 1.125rem;
+    margin: 0.5rem 0 1.5rem;
+    color: #555;
+}
+#countdown {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #007acc;
+    margin-bottom: 2rem;
+}
+form#notify-form {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+input[type="email"] {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+input[type="email"]:focus {
+    outline: none;
+    border-color: #007acc;
+    box-shadow: 0 0 4px #007acc;
+}
+button[type="submit"] {
+    background-color: #007acc;
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 0 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: #005fa3;
+    outline: none;
+}
+/* Screen reader only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.socials a {
+    color: #007acc;
+    font-size: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+}
+.socials a:hover,
+.socials a:focus {
+    color: #005fa3;
+    outline: none;
+}
+/* SVG icon size */
+.socials svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
