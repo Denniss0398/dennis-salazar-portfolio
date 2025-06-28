@@ -1,6 +1,6 @@
 (function() {
             const countdownElement = document.getElementById("countdown");
-            const launchDate = new Date("June 28, 2025 00:00:00").getTime();
+            const launchDate = new Date("August 1, 2025 00:00:00").getTime();
 
             function updateCountdown() {
                 const now = new Date().getTime();
