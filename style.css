@@ -2,7 +2,7 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
-body {
+body.coming-soon {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background: #f5f7fa;
@@ -143,4 +143,81 @@ button[type="submit"]:focus {
         width: 24px;
         height: 24px;
     }
+}
+
+/* ===== Home Page (Dark Mode) Styles ===== */
+
+body.home {
+    background-color: #121212;
+    color: #f1f1f1;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #007acc;
+}
+
+header.bg-dark {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    padding: 5rem 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.25rem;
+    color: #ccc;
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* Project Section Example */
+.project-item {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h3 {
+    color: #fff;
+}
+
+.project-item p {
+    color: #bbb;
+}
+
+.project-item .btn {
+    margin-right: 1rem;
+}
+footer {
+  border-top: 1px solid #333;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #007acc;
 }
