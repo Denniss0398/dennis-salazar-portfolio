@@ -6,12 +6,11 @@
                 const now = new Date().getTime();
                 const distance = launchDate - now;
 
-                if (distance < 0) {
-                    clearInterval(timer);
-                    countdownElement.textContent = "We're Live!";
-                    return;
+               if (distance < 0) {
+                     clearInterval(countdown);
+                    window.location.href = "home.html"; // or "main.html" or whatever your homepage file is
                 }
-
+                
                 const days = Math.floor(distance / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
