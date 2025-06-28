@@ -1,6 +1,6 @@
 (function() {
             const countdownElement = document.getElementById("countdown");
-            const launchDate = new Date("August 1, 2025 00:00:00").getTime();
+            const launchDate = new Date("June 28, 2025 00:00:00").getTime();
 
             function updateCountdown() {
                 const now = new Date().getTime();
@@ -10,7 +10,7 @@
                      clearInterval(countdown);
                     window.location.href = "home.html"; // or "main.html" or whatever your homepage file is
                 }
-                
+
                 const days = Math.floor(distance / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
