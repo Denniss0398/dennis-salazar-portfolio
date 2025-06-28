@@ -1,0 +1,29 @@
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Node.js (for future use)
+node_modules/
+npm-debug.log*
+.env
+
+# Editor folders
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Build output (for React, Webpack, etc. later)
+dist/
+build/
+
+# Temporary files
+*.bak
+*.tmp
+*.swp
